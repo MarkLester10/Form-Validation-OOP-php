@@ -37,13 +37,13 @@ if(isset($_POST['submit'])){
         <div class="form-group">
         <label for="" class="sr-only">Username</label>
         <input type="text" name="username"  class="form-control" placeholder="Username" >
-        <span class="message"><?php echo $errors['username'] ?? '' ?></span>
+        <span class="message"><?php echo htmlspecialchars($errors['username'] ?? '') ?></span>
         </div>
 
         <div class="form-group">
         <label for="" class="sr-only">Email address</label>
         <input type="text" name="email" class="form-control" placeholder="Email address">
-        <span class="message"><?php echo $errors['email'] ?? '' ?></span>
+        <span class="message"><?php echo htmlspecialchars($errors['email'] ?? '') ?></span>
         </div>
     
 
