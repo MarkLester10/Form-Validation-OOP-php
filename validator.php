@@ -2,7 +2,7 @@
 
 
 class Validator{
-    private $data = array();
+    private $data = [];
     private $errors=[];
     private static $fields = ['username', 'email']; 
 
